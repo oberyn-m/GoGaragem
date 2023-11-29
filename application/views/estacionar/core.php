@@ -61,6 +61,7 @@
                                                 <?php endif; ?>
 
                                             <?php endforeach; ?>
+
                                         </select>
                                         <?php echo form_error('estacionar_precificacao_id', '<div class="text-danger">', '</div>') ?>
                                     </div>
@@ -236,3 +237,24 @@
 
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var select1 = document.querySelector('.categoria');
+        var select2 = document.querySelector('.precificacao');
+        var valorHoraInput = document.querySelector('.estacionar_valor_hora');
+
+        select2.addEventListener('change', function () {
+            var selectedOption = select2.options[select2.selectedIndex];
+            
+            var valorCompleto = selectedOption.value;
+            
+            var valorHora = valorCompleto.substring(1);
+
+            // Atualiza o campo "Valor hora"
+            valorHoraInput.value = valorHora;
+        });
+
+        // Dispare o evento 'change' no carregamento da página, se uma categoria já estiver selecionada
+        select1.dispatchEvent(new Event('change'));
+    });
+</script>
