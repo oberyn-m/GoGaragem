@@ -6,9 +6,11 @@
                 <button type="button" id="navbar-fullscreen" class="nav-link"><i class="ik ik-maximize"></i></button>
             </div>
             <div class="top-menu d-flex align-items-center">
+                
+                <!--
                 <?php if ($this->router->fetch_class() == 'home' && isset($notificacoes)): ?>
 
-                    <?php if ($this->ion_auth->is_admin()): ?>
+                    
                         <div class="dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="notiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="blink_me">
@@ -73,22 +75,29 @@
                                 </div>
                             </div>
                         </div>
-                    <?php endif; ?>
+                    
 
                 <?php endif; ?>
-
+                -->
+                
                 <?php if ($this->ion_auth->is_admin()): ?>
                 <button type="button" class="nav-link ml-10" id="apps_modal_btn" data-toggle="modal" data-target="#appsModal"><i class="ik ik-grid"></i></button>
                 <?php endif; ?>
                 
+                <!-- 
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ik ik-user ik-2x text-white"></i> </a>
+                    
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a data-toggle="tooltip" data-placement="left" title="Gerenciar perfil" class="dropdown-item" href="<?php echo base_url('usuarios/core/' . $this->session->userdata('user_id')); ?>"><i class="ik ik-user dropdown-icon"></i> Atualizar Perfil</a>
                         <a data-toggle="tooltip" data-placement="left" title="Encerrar a sessão" class="dropdown-item" href="<?php echo base_url('login/logout'); ?>"><i class="ik ik-power dropdown-icon"></i> Sair</a>
                     </div>
+                   
+                    
                 </div>
-
+                 -->
+                 
+                 <a data-toggle="tooltip" data-placement="left" title="Encerrar a sessão" class="ml-10" href="<?php echo base_url('login/logout'); ?>"><i class="ik ik-power text-white"></i></a>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ class Estacionar extends CI_Controller {
     public function __construct() {
         parent::__construct();
 
-        if ($this->ion_auth->logged_in()) {
+        if (!$this->ion_auth->logged_in()) {
             redirect('login');
         }
 
@@ -87,7 +87,7 @@ class Estacionar extends CI_Controller {
                 $this->core_model->insert('estacionar', $data, TRUE);
 
                 $estacionar_id = $this->session->userdata('last_id');
-
+                
                 redirect($this->router->fetch_class() . '/acoes/' . $estacionar_id);
 
                 //Criar método imprimir
