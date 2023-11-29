@@ -1,7 +1,7 @@
-# Go Garagem TCC Pós Graduação - Desenvolvimento Web FullStack - PUC Minas
+# Go Garagem - TCC Pós Graduação - Desenvolvimento Web FullStack - PUC Minas
 
-Projeto desenvolvido para a matéria de TCC do curso de Desenvolvimento Web FullStack da instituição PUC Minas que consiste
-em um sistema que oferece um gerenciamento de estacionamento privado.
+Projeto desenvolvido para a matéria de TCC do Curso de Desenvolvimento Web FullStack da Instituição PUC Minas que consiste
+em um sistema que oferece um gerenciamento completo de um estacionamento privado.
 
 ---
 
