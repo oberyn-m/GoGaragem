@@ -25,7 +25,8 @@ date_default_timezone_set('America/Sao_paulo');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/estacionamento/';
+//$config['base_url'] = 'http://localhost/estacionamento/';
+$config['base_url'] = 'https://gogaragem.000webhostapp.com/';
 
 /*
 |--------------------------------------------------------------------------
